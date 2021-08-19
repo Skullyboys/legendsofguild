@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="assets/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Legends Of The Guild</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;700&family=Kelly+Slab&display=swap" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9KQBTZXMBN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-9KQBTZXMBN');
+    </script>
+    <script>
+        function _initMobileMenu() {
+            var button = document.querySelector('.button--menu');
+            var buttonClose = document.querySelector('.button--close-menu');
+            var menu = document.querySelector('.mobile-nav');
+
+            if (menu) {
+                var menuItems = [].slice.call(menu.querySelectorAll('a'));
+
+                menuItems.forEach(function(menuItem) {
+                    menuItem.addEventListener('click', function() {
+                        menu.classList.remove('active');
+                    });
+                });
+            }
+
+            buttonClose.addEventListener('click', function() {
+                menu.classList.remove('active');
+            });
+
+            button.addEventListener('click', function() {
+                menu.classList.add('active');
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', _initMobileMenu);
+    </script>
+    <script type="module" crossorigin src="assets/index.03cc2def.js"></script>
+    <link rel="stylesheet" href="assets/index.44108f80.css">
+</head>
+
+<body>
+    <div class="header">
+        <nav class="header-nav">
+            <div class="header-nav__inner flex">
+                <div class="toolbar lg:hidden px-3 pb-1">
+                    <button class="button button--menu button--medium button--orange">
+            <span class="btnmenu button__text">MENU</span>
+          </button>
+                </div>
+                <ul class="menu menu--primary hidden lg:flex">
+                    <li class="menu__item"><a class="menu__text" href="#">Home</a></li>
+                    <li class="menu__item"><a class="menu__text" href="#features">Features</a></li>
+                    <li class="menu__item"><a class="menu__text" href="#how-to-play">Game Story</a></li>
+                    <li class="menu__item"><a class="menu__text" href="#marketplace">Marketplace</a></li>
+                    <li class="menu__item"><a class="menu__text" href="#tokenomics">Tokenomics</a></li>
+                    <li class="menu__item"><a class="menu__text" target="_blank" href="#">Whitepaper</a></li>
+                    <li class="menu__item"><a class="menu__text" target="_blank" href="#">Audit</a></li>
+                    <li class="menu__item"><a class="menu__text" href="#community">Community</a></li>
+                </ul>
+
+                <ul class="menu menu--social flex justify-center">
+                    <li class="menu__item">
+                        <a class="menu__icon" target="_blank" href="https://t.me/legendsguild_public">
+                            <svg class="icon-32" viewbox="0 0 33 32">
+                <use xlink:href="#icon-telegram" />
+              </svg>
+                        </a>
+                    </li>
+                    </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__icon" target="_blank" href="https://twitter.com/Legends_Guild?s=09">
+                            <svg class="icon-32" viewbox="0 0 33 32">
+                <use xlink:href="#icon-twitter" />
+              </svg>
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__icon" target="_blank" href="">
+                            <svg class="icon-32" viewbox="0 0 33 32">
+                <use xlink:href="#icon-youtube" />
+              </svg>
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__icon" target="_blank" href="">
+                            <svg class="icon-32" viewbox="0 0 33 32">
+                <use xlink:href="#icon-discord" />
+              </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav class="mobile-nav">
+            <div class="mobile-nav__inner">
+                <div class="card card--feature">
+                    <div class="card__horizontal">
+                        <div class="card__vertical">
+                            <div class="card__inner text-center">
+                                <ul class="menu">
+                                    <li class="menu__item"><a class="menu__text" href="#">Home</a></li>
+                                    <li class="menu__item"><a class="menu__text" href="#features">Features</a></li>
+                                    <li class="menu__item"><a class="menu__text" href="#how-to-play">How To Play</a></li>
+                                    <li class="menu__item"><a class="menu__text" href="#marketplace">NFT Marketplace</a></li>
+                                    <li class="menu__item"><a class="menu__text" href="#tokenomics">Tokenomics</a></li>
+                                    <li class="menu__item"><a class="menu__text" href="#roadmap">Roadmap</a></li>
+                                    <li class="menu__item"><a class="menu__text" href="#community">Community</a></li>
+                                </ul>
+
+                                <ul class="menu flex justify-center">
+                                    <li class="menu__item">
+                                        <a class="menu__icon" target="_blank" href="https://bit.ly/3iloSBF">
+                                            <svg class="icon-32" viewbox="0 0 33 32">
+                        <use xlink:href="#icon-telegram" />
+                      </svg>
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__icon" target="_blank" href="https://bit.ly/3iArtYG">
+                                            <svg class="icon-32" viewbox="0 0 33 32">
+                        <use xlink:href="#icon-facebook" />
+                      </svg>
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__icon" target="_blank" href="https://bit.ly/3rQBzYk">
+                                            <svg class="icon-32" viewbox="0 0 33 32">
+                        <use xlink:href="#icon-twitter" />
+                      </svg>
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__icon" target="_blank" href="https://bit.ly/3jODrNw">
+                                            <svg class="icon-32" viewbox="0 0 33 32">
+                        <use xlink:href="#icon-youtube" />
+                      </svg>
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__icon" target="_blank" href="https://bit.ly/3fzgb4V">
+                                            <svg class="icon-32" viewbox="0 0 33 32">
+                        <use xlink:href="#icon-discord" />
+                      </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <button class="button button--white button--close-menu mt-4">
+                  <span class="button__text">Close Menu</span>
+                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <figure class="header-intro">
+                <img class="intro__image block mx-auto" src="lg_logo.png">
+                <figcaption class="intro__content">
+                    <h1 class="intro__text">An augmented-NFTs Crypto World exploration game that challenges you to be an Legends Of The Guild on Binance Smart Chain.</h1>
+                    <div class="toolbar flex col items-center justify-center">
+                        <a class="button button--orange lg:mt-1" href="https://dxsale.sale/app/v2_9/defipresale?saleID=2462&chain=BSC" target="_blank">
+                            <span class="button__text">Join Our Presale NOW!!!</span>
+                        </a>
+                        <a class="button button--orange lg:mt-1" href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=#" target="_blank">
+                            <span class="button__text">Buy On PancakeSwap</span>
+                        </a>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div id="particles-js"></div>
+    </div>
+
+    <section id="features" class="section section--features">
+        <div class="section__inner">
+            <div class="container">
+                <div class="divider">
+                    <img class="block mx-auto" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAAARBAMAAADZBkM8AAAAMFBMVEUAAAD///////////////////////////////////////////////////////////87TQQwAAAAEHRSTlMABQgtFgYDJCkaHxMPLzc+H1wV6wAAAVJJREFUWMPl1j1Iw1AQB/A/QRvRDGZoJz9CobgUQTI4dQuIU6uStbZLFkEyCIqgc0GUDi7dulpQN5eChA5ORcGC4hBUtH4OQsVFF5uE0PegkDcIiclvOLiDu+VuOPiJryKqzt8ROjHNVRQtcdWSJEkA/5XXAY6splSbaEtojgL+H41UFClpgG8v60CDric0AkJJkICjG4Az4BdiK97iqpfFJJvR2AnA68AYOMaWlOplQfRAXRWarjpJ6Zmv0GqkddqHFTZKfciEjGmaz1iB7Qy73bQlE0r9OONpmzXCQYWyr/TUSU0X/tREFYxWDU5y7l54AiOhgwC7LoAN10YDXWlM5sDoNIcAG3pTGO0pc2VgZE15URgd3iPQpmRGmU/5FbiQb1syox2ExRby5YFObBbRM3zHPWwb45F8448lfmbwG1EkPAJZA5G0dDl9hYjK/sBHvxpJHZRGqrEDAAAAAElFTkSuQmCC"
+                        srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAAARBAMAAADZBkM8AAAAMFBMVEUAAAD///////////////////////////////////////////////////////////87TQQwAAAAEHRSTlMABQgtFgYDJCkaHxMPLzc+H1wV6wAAAVJJREFUWMPl1j1Iw1AQB/A/QRvRDGZoJz9CobgUQTI4dQuIU6uStbZLFkEyCIqgc0GUDi7dulpQN5eChA5ORcGC4hBUtH4OQsVFF5uE0PegkDcIiclvOLiDu+VuOPiJryKqzt8ROjHNVRQtcdWSJEkA/5XXAY6splSbaEtojgL+H41UFClpgG8v60CDric0AkJJkICjG4Az4BdiK97iqpfFJJvR2AnA68AYOMaWlOplQfRAXRWarjpJ6Zmv0GqkddqHFTZKfciEjGmaz1iB7Qy73bQlE0r9OONpmzXCQYWyr/TUSU0X/tREFYxWDU5y7l54AiOhgwC7LoAN10YDXWlM5sDoNIcAG3pTGO0pc2VgZE15URgd3iPQpmRGmU/5FbiQb1syox2ExRby5YFObBbRM3zHPWwb45F8448lfmbwG1EkPAJZA5G0dDl9hYjK/sBHvxpJHZRGqrEDAAAAAElFTkSuQmCC 1x, data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA+gAAAAiCAMAAAD75gOZAAAAM1BMVEUAAAD///////////////////////////////////////////////////////////////+3leKCAAAAEXRSTlMAChFIIQYOFRkbQTA8NiZFK8GkpgcAAALOSURBVHja7d3tduIgEAbggQkQBgLc/9XuWqWJPYnGj3UDfZ8x7Wn0h8eTtxmEKMGvMwwEAJ1zzJoAoGs2i4glAOiYiuwcR0UA0C0t7IjGLOjeAV5g5tpB3WF/0De4ddrQrLDoS94LzYx2G/Q2+4O6xyhzD80FcGim/jTLnYbMQ9TXzahat9nztsJa5xZPJLAo+ksJh8Wzc3o7qDsCXOt8exTNLgk/bYg6wEOcppn/atqdZL8IktZIFUDjlFM0s8LaZrFXD0DOAZpnr4Kss0jWNDMOk20A7TNa04JnHmlBO4L+mfdQx2E/R1t9aHateadSVjt7pY/NfpA6DvMe5KrxBr9u2CntV1LZJTxheki8IUtcIfvlffhFkubmfWmtcU/8qryPPGLvi19NjwlPKLukRwz7+MGvGW9yZ6SeZu8+oJat2zZ9qQX9Bu6qFtwrRuEw/zHXu/lXBXZz876u3uM5+FeNb7d8ec+8cHGv2D5A3sJW+rs2LGOhav0rWAn5FBvZUwNMFFVnymmVdub8W2ITb72biRMBfIhqJOmap9VhemXr7qmNK9pMZFxjC9t+7RFXeFhE+idVB+hDG+fJVv6/QkcmLtSAwG5u0rdy7jhQA7QwpgLh0wrHBg47E0VvJF25eg+3MEBXiXHNHXyeGTLHMhxdYBm+pFIcLehS0vBFeBqOLgXhCTmH/0GlKXNTxquZg5bkGMYG2g7o1JGWBG7xHK06sTFrulCB/WUne9UApBzgtpSDqRe0uO+cB0xMA/TEJJ4MnYxZRvrLBg7mnPM2pgkB4C7jeVJ04mJOhsbIxdBfasLENEA/hvrBrzpySPmSc9vIsh8A2MezODpRhTmOdOIk43wO0JX57K3HOnKP+GwZgM6oyMHQNxPwNQ4APSqLNaSjcMLUNECPnNRZtcDSwEJ9AHhCDbjPHNC2A/TLCU8TTucAnTODyIDR+W/zB89cYvalBCDoAAAAAElFTkSuQmCC 2x"
+                        alt="Section divider" />
+                </div>
+
+
+                <div class="section__heading md:text-center">
+                    <h2 class="heading__title">Legends Of The Guild ECOSYSTEM</h2>
+                    <p class="heading__desc">Legends Of The Guild is a NFT gaming ecosystem aiming to build a vast Legends Universe living on the Binance Smart Chain where millions of players all around the world participate in the blockchain-based NFT game in a simple, fast
+                        and fun way. Legends Of The Guild creates a complete blockchain gaming ecosystem that connects game players, developers, communities and distributors.</p>
+                </div>
+
+                <div class="section__content mt-4">
+                    <div class="features md:flex">
+                        <div class="card card--feature md:flex-1 md:mt-0">
+                            <div class="card__horizontal">
+                                <div class="card__vertical">
+                                    <div class="card__inner">
+                                        <div class="card__top">
+                                            <img class="block mx-auto" src="assets/sword.ff56c73a.png" srcset="assets/sword.ff56c73a.png 1x, assets/sword@2x.0eaf3145.png 2x" alt="Legends Of The Guild Sword">
+                                        </div>
+                                        <!-- /.card__top -->
+                                        <div class="card__content text-center p-3">
+                                            <h3 class="card__title">Legends Of The Guild Sword</h3>
+                                            <div class="card__desc mt-3">Find a sword that needs to feel balanced in your hand when you’re wielding it and have a comfortable and secure feeling grip.</div>
+                                        </div>
+                                        <!-- /.card__content -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.card__inner -->
+                        </div>
+                        <!-- /.card -->
+
+                        <div class="card card--feature mt-3 md:flex-1 md:mt-0 md:ml-5">
+                            <div class="card__horizontal">
+                                <div class="card__vertical">
+                                    <div class="card__inner">
+                                        <div class="card__top">
+                                            <img class="block mx-auto" src="assets/box.25f5b7e2.png" srcset="assets/box.25f5b7e2.png 1x, assets/box@2x.175cf415.png 2x" alt="Legends Of The Guild Sword">
+                                        </div>
+                                        <!-- /.card__top -->
+                                        <div class="card__content text-center p-3">
+                                            <h3 class="card__title">Legends MYSTERY BOX</h3>
+                                            <div class="card__desc mt-3">Redeem Legends Of The Guild token to receive a randomised selection of further virtual game items to level up or trade in NFT Marketplace.</div>
+                                        </div>
+                                        <!-- /.card__content -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.card__inner -->
+                        </div>
+                        <!-- /.card -->
+
+                        <div class="card card--feature mt-3 md:flex-1 md:mt-0 md:ml-5">
+                            <div class="card__horizontal">
+                                <div class="card__vertical">
+                                    <div class="card__inner">
+                                        <div class="card__top">
+                                            <img class="block mx-auto" src="data:image/png;base64,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"
+                                                srcset="data:image/png;base64,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 1x, assets/market@2x.75ceb298.png 2x"
+                                                alt="Legends Of The Guild Sword">
+                                        </div>
+                                        <!-- /.card__top -->
+                                        <div class="card__content text-center p-3">
+                                            <h3 class="card__title">Legends NFT MARKETPLACE</h3>
+                                            <div class="card__desc mt-3">Buy or Sell your Legends Of The Guild NFTs collected in game to get rewards of BNB or Legends Of The Guild Token.</div>
+                                        </div>
+                                        <!-- /.card__content -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.card__inner -->
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                    <!-- /.features -->
+
+                    <figure class="spin mt-6 md:flex">
+                        <div class="spin-wheel">
+                            <img class="block wheel" src="assets/spin.png" srcset="assets/spin.png 1x, assets/wheel@2x.a98c3eb3.png 2x" alt="Lucky Wheel">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZgAAAATCAMAAACa5evIAAAAaVBMVEUAAAAREREKCgoHBwcDAwMFBQUFBQUCAgICAgIBAQEBAQEDAwMBAQECAgIBAQEAAAABAQEAAAAAAAADAwMBAQEBAQEBAQEBAQEAAAABAQEBAQEAAAAAAAAAAAABAQEAAAAAAAAAAAAAAADWA0yhAAAAI3RSTlMABAgLERUOGB8xPRxKKiZuYoJVIzlQNS17RkKMZ11Yc5J4hwDCIUMAAANISURBVFjD7daNdtJAEAVgSSgWxKCCtFQq4Ps/pLPLZO787KIkrUctNz8olOSc/bgD7265ZWgm/SMl/2+ST3zwmZ7Lr+fd/u35/fRwy8Dw+vIKv1aEkA95gvI28fiTO2Ttm3xqGjrkHFN/dUJ72q7ASxv/8z8E+43F5wVrLqTNadqxOV+p8YmGgTB+iv4lrcnlUVT5MLcxs0KmvE+HZZa2Qtq8zaxfW6mipCj2N32JSd/Ls8cTKIS0JMjU5o72Wt4PS/V66W46zs2JtbDKW30M/vn4OgiFVAIIIIgAF9f7Q8x9Cp1HJVw1+EW2KFYtF61CMHqlKuFnKe0liggRGYoAds2R9Zr2Pt26o9DJ5iOnoy2d04m38zNd/5DSFbK2qeqVyTAfL1PV5t5IkGBhB5OXEIVpYPACa0TW2uTBZP6iyVfExe2NC3LBK2LZQdjOikiKaQhPYVBVMXwfBCEqRIHCum+RjctiQfvI5OtsJOkmW5X5tpejPag5LmvlpZQSkFpNBKW85Fd8fTQQEYuI4QoBCINQW//Nlhcdq/60eJLsdjs6kGXal0Oyc6HL0uVxJ7otR8NJRCzHlUu3KigBySpJwqTzv3NNQQoiXNXYDGfBEtGh/+SLAEcWf4l8TYfNlxeKvWq6SwEQZgDzXJCKjVJt0kRx2J1tLI/+LolTy46rOwXiqtHl2FqYabTYKIdgUFj575Jnk0+j8+wjd4KbMvNelkozoU9JiJESEIggNAWQ8DAQiiNfKkBxJQFIrIctxzaB6FZECkAYg9Li721WlD1tQ4N3712iG8AclmaqISkiAJFQ8FE8wNEuUhdhERRtkkDutYgMKymH4yhRaAchAMIKOawOKiedx6tzejwhBx1rJ3FY2skqeSMr1M858dE8HqdxNpoFKuabhGuiOtI3ZAORpGE8IoYvgyBwykv/+Rf5ccULiHFzZNFKM3kjP+wEiHXgAx2Pw71RMgwjZREVDC/uCZOEjvTTynqAw2CsrAUzCIRbWJ9vI+OvV7OyTqFQrkoFIvbZ9D5b0elS8OtAxpqm8TDSFmYJKHNScSRSERlXRY9YjKLFZYTj8UjHmND7L3OVnEpGDAQh0yHhYR/oPFAw2bTNuTW6Mz8BY/MObiLWhkUAAAAASUVORK5CYII="
+                                class="wheel-shadow-hoz block md:hidden">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAGYCAMAAACXjilRAAAAbFBMVEUAAAASEhIHBwcEBAQLCwsEBAQCAgIDAwMCAgIBAQEBAQEBAQECAgIBAQEBAQEAAAAAAAAAAAAAAAABAQEBAQEAAAAAAAABAQEAAAAAAAABAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI+0MrAAAAJHRSTlMABAsQBxUhGR0zLykmPTlJeVNXQk5jb0aFXGCMa4F0Z5J9iY6YB7PVAAAEu0lEQVRYw6XZ65KiMBAFYMIEBS94QWXGdXSdff93XDoBTtLdqVC7/vzqhJAGgSQF+5nhVyjIQMkRZXKIWWkWBoKBSmmy7RArJXGzihmiD54baImVqn1EZkar5OGq2IhGAzpbR2YHis04qzRbR2a91ZGVulWq1bXsol7ljSgy622l5Fa7uAIwxISZwehwW+Vw/2ObAjjadsNyQ4zbOmWNcrjADIzldtJW0ly3rchtmpadsjTfbd4qsnaPPnwXzpDz1oQ5O51KFw23ZjZ10eyFqblW5KjbPjSqnm5dHw3Xnwpyk+27Q5CrYCOWZHQqPcs5uwTDlTadcgezZDuyA3Ip86dyioYWmYH1l7ShBK1qh8s5MDeMTljDrBrt9DVZqZj9cLbvLlGuhuFO86d8vvMSSGtzOTvlDqfzNc6507vGpYLJHEq/baK2Zi7V6f7C8cbhnoX1Wasmuz6W2OkLRneaGy6sLDEM5GZ7zbnAbsLui+wCs7Od749nbD2sCOxKhjJv9jDjzZXga8750nu7oe1cltsxLjMNzVuhmElYlcxRCZ5Rru2E+VI9nu/J6BI13eE8WeFst3WlQg7lQ26wlbMrGUrv7TbnYI/jm10OKst31EcfGnKvyXCJ0oa2TdsPpXoiB3tHbfcw423bwPBv82V+f85tx8sBw+V4pM1k7fjN7Cysg4U5Kl/Ub3dx9oOcsIpZkc5tRvsM27ZqDlaM1vK29Wq8vO/PX/ySP2Eu18PoHajlpOG2ypt+PH+7fE/9oi2ZzP38ydv9MRtuv8dR5oQdArPJXAMbCLc4zMT2G8drRvsFG3IHmH/Sydya56zPefskM2Hu5gzvd7p1XS7+y1yRC0zkzpFVsKVtdWN/QVj0dwvHprWFoVa5czHJccBwPepMDsdb1C+O952ugUnWamENtJruZE5vu8nkTGZs+T5YrdL12/1jDfKGc152vKrOjEPeu+mcvK/kf1o3A+PPCJj6fMGzCTntGQZruOF4/Bkrre2zOfl8ttpzHKa9A+gVP5jh7wXtPePNwsT76MJNz3VaLme2FIZPPWc/mDCRnV/DzZF+x8PS3wywZoF98Lb4HtLtQcb+XKlvKZaD8e+1vH0tzbHvSXx34mW7gfGLfgyN2orv4sgM7OpM/x5HH5q54stvflg5G+YQ+nzBG+YVmLtMhpvI2zG0xs9norkQTMyj/svEnA452FWYmwyR4Ukp5pe7DUzOTVmhYdbCXre5X9iUy86d5VwcFszZYW5pBHN7TCaxBoCLhLUCVphHfj2ihSk5XBCa8POcHwhyFdZLYJm1loxREeY1nkKuBWF5bTYUGoZ/Q2Jd6uAMRdWtlbaBDZheS8Oam8N5bQ5mMTi+/tfSSeN40+AOp8zaIdm8xojHhLLuiHVM5LLrnVg/leZPUFjbhfYBiwfM1nLJXMdRLl4bNuoaspE25bJr17B9ZGthJdbHgwG7k4YVZOoavG47zba6KXsJwqiTBVYzw/4HsByC3Kwww4x1Avv3vR20XTETe0qEwkpY1Eml7WVhHwyd6MbalpMBxZ6cSZnc91PM2JRV3BxGZmDoxMqclXuf2h5pAcvtr1ppHnP7v0XKrDAjzWHGgFkzi/fUNUvu2/8F1M/22D6tlGgAAAAASUVORK5CYII="
+                                class="wheel-shadow hidden md:block">
+                        </div>
+
+                        <figcaption class="md:flex-1 md:flex md:col md:items-center md:justify-center p-4 text-center">
+                            <h3 class="spin__title">Spin The Legends Of The Guild Lucky Wheel</h3>
+                            <div class="spin__desc mt-3">Spin the lucky wheel to see which Legends Of The Guild item comes up next. 6 random prizes is set up in the wheel and the reward in each prize is: ....</div>
+                            <div class="spin__actions mt-2">
+                                <button class="button button--orange">
+                  <span class="button__text">TRY YOUR LUCK!</span>
+                </button>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-to-play" class="section section--guide">
+        <div class="section__inner">
+            <div class="container">
+                <div class="divider">
+                    <img class="block mx-auto" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAAARBAMAAADZBkM8AAAAMFBMVEUAAAD///////////////////////////////////////////////////////////87TQQwAAAAEHRSTlMABQgtFgYDJCkaHxMPLzc+H1wV6wAAAVJJREFUWMPl1j1Iw1AQB/A/QRvRDGZoJz9CobgUQTI4dQuIU6uStbZLFkEyCIqgc0GUDi7dulpQN5eChA5ORcGC4hBUtH4OQsVFF5uE0PegkDcIiclvOLiDu+VuOPiJryKqzt8ROjHNVRQtcdWSJEkA/5XXAY6splSbaEtojgL+H41UFClpgG8v60CDric0AkJJkICjG4Az4BdiK97iqpfFJJvR2AnA68AYOMaWlOplQfRAXRWarjpJ6Zmv0GqkddqHFTZKfciEjGmaz1iB7Qy73bQlE0r9OONpmzXCQYWyr/TUSU0X/tREFYxWDU5y7l54AiOhgwC7LoAN10YDXWlM5sDoNIcAG3pTGO0pc2VgZE15URgd3iPQpmRGmU/5FbiQb1syox2ExRby5YFObBbRM3zHPWwb45F8448lfmbwG1EkPAJZA5G0dDl9hYjK/sBHvxpJHZRGqrEDAAAAAElFTkSuQmCC"
+                        srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAAARBAMAAADZBkM8AAAAMFBMVEUAAAD///////////////////////////////////////////////////////////87TQQwAAAAEHRSTlMABQgtFgYDJCkaHxMPLzc+H1wV6wAAAVJJREFUWMPl1j1Iw1AQB/A/QRvRDGZoJz9CobgUQTI4dQuIU6uStbZLFkEyCIqgc0GUDi7dulpQN5eChA5ORcGC4hBUtH4OQsVFF5uE0PegkDcIiclvOLiDu+VuOPiJryKqzt8ROjHNVRQtcdWSJEkA/5XXAY6splSbaEtojgL+H41UFClpgG8v60CDric0AkJJkICjG4Az4BdiK97iqpfFJJvR2AnA68AYOMaWlOplQfRAXRWarjpJ6Zmv0GqkddqHFTZKfciEjGmaz1iB7Qy73bQlE0r9OONpmzXCQYWyr/TUSU0X/tREFYxWDU5y7l54AiOhgwC7LoAN10YDXWlM5sDoNIcAG3pTGO0pc2VgZE15URgd3iPQpmRGmU/5FbiQb1syox2ExRby5YFObBbRM3zHPWwb45F8448lfmbwG1EkPAJZA5G0dDl9hYjK/sBHvxpJHZRGqrEDAAAAAElFTkSuQmCC 1x, data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA+gAAAAiCAMAAAD75gOZAAAAM1BMVEUAAAD///////////////////////////////////////////////////////////////+3leKCAAAAEXRSTlMAChFIIQYOFRkbQTA8NiZFK8GkpgcAAALOSURBVHja7d3tduIgEAbggQkQBgLc/9XuWqWJPYnGj3UDfZ8x7Wn0h8eTtxmEKMGvMwwEAJ1zzJoAoGs2i4glAOiYiuwcR0UA0C0t7IjGLOjeAV5g5tpB3WF/0De4ddrQrLDoS94LzYx2G/Q2+4O6xyhzD80FcGim/jTLnYbMQ9TXzahat9nztsJa5xZPJLAo+ksJh8Wzc3o7qDsCXOt8exTNLgk/bYg6wEOcppn/atqdZL8IktZIFUDjlFM0s8LaZrFXD0DOAZpnr4Kss0jWNDMOk20A7TNa04JnHmlBO4L+mfdQx2E/R1t9aHateadSVjt7pY/NfpA6DvMe5KrxBr9u2CntV1LZJTxheki8IUtcIfvlffhFkubmfWmtcU/8qryPPGLvi19NjwlPKLukRwz7+MGvGW9yZ6SeZu8+oJat2zZ9qQX9Bu6qFtwrRuEw/zHXu/lXBXZz876u3uM5+FeNb7d8ec+8cHGv2D5A3sJW+rs2LGOhav0rWAn5FBvZUwNMFFVnymmVdub8W2ITb72biRMBfIhqJOmap9VhemXr7qmNK9pMZFxjC9t+7RFXeFhE+idVB+hDG+fJVv6/QkcmLtSAwG5u0rdy7jhQA7QwpgLh0wrHBg47E0VvJF25eg+3MEBXiXHNHXyeGTLHMhxdYBm+pFIcLehS0vBFeBqOLgXhCTmH/0GlKXNTxquZg5bkGMYG2g7o1JGWBG7xHK06sTFrulCB/WUne9UApBzgtpSDqRe0uO+cB0xMA/TEJJ4MnYxZRvrLBg7mnPM2pgkB4C7jeVJ04mJOhsbIxdBfasLENEA/hvrBrzpySPmSc9vIsh8A2MezODpRhTmOdOIk43wO0JX57K3HOnKP+GwZgM6oyMHQNxPwNQ4APSqLNaSjcMLUNECPnNRZtcDSwEJ9AHhCDbjPHNC2A/TLCU8TTucAnTODyIDR+W/zB89cYvalBCDoAAAAAElFTkSuQmCC 2x"
+                        alt="Section divider" />
+                </div>
+
+                <div class="section__heading">
+                    <h2 class="heading__title">How To Play</h2>
+                </div>
+
+                <div class="section__content">
+                    <figure class="mt-4 md:flex">
+                        <img class="block mx-auto" width="500px" height="5px" src="assets/grimreaper.png">
+                        <figcaption class="md:ml-5">
+                            <p>The central concept of Legends Of The Guild is game story where Legends live in a legendary landscape called Legends Valley that life is good. The Legends Valley is ruled by 3 tribes: Archers, Swordsmen and Exorcists. At the
+                                ancient times, this magical land converged the spirit of heaven and earth attracting evil spirits that union of three clans had to fight against the Demons. After thounsand years, Dark Legends is paroled and comes back
+                                to revenge. Unsealed Dark Legends confined all of Light Legends into Dungeons. Players’ mission is to choose a kind of Sword of Light with equipements on marketplace to kill Demons, collect Legends Eggs, hatch into Light
+                                Legends, feed to grow and battle.</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="md:flex md:row-reverse md:mt-4">
+                        <img class="block mx-auto" width="500px" height="10%" src="assets/gargantua.png">
+                        <figcaption class="md:ml-5">
+                            <p>Legends Of The Guild takes advantage of all the perks of the blockchain technology to create a universe where Legends are the main characters. Players exercise randomly one of 3 role play as Archers, Swordsmen and Exorcists
+                                to finish the tasks. Tame and breed Light Legends through a semi-automatic battle style system.</p>
+                            <p>Legends Of The Guild Game has two types of combat: PVE (Player vs Environment) and PVP (Player vs Player), where you can farm items and Legends Of The Guild Tokens that will allow you to advance in the game, and develop Legends
+                                Of The Guild's economy.</p>
+                            <p>$Legends (LOG) is the primary utility token of Legends Of The Guild ecosystem. It simplifies the payment process and supports the growth of Legends Of The Guild ecosystem.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="section__content">
+                    <h2 style="
+                    text-align: center;
+                ">Game Map</h2>
+                    <img class="block mx-auto" src="assets/map.jpg">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="marketplace" class="section section--market">
+        <div class="section__inner">
+            <div class="container">
+                <div class="divider">
+                    <img class="block mx-auto" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAAARBAMAAADZBkM8AAAAMFBMVEUAAAD///////////////////////////////////////////////////////////87TQQwAAAAEHRSTlMABQgtFgYDJCkaHxMPLzc+H1wV6wAAAVJJREFUWMPl1j1Iw1AQB/A/QRvRDGZoJz9CobgUQTI4dQuIU6uStbZLFkEyCIqgc0GUDi7dulpQN5eChA5ORcGC4hBUtH4OQsVFF5uE0PegkDcIiclvOLiDu+VuOPiJryKqzt8ROjHNVRQtcdWSJEkA/5XXAY6splSbaEtojgL+H41UFClpgG8v60CDric0AkJJkICjG4Az4BdiK97iqpfFJJvR2AnA68AYOMaWlOplQfRAXRWarjpJ6Zmv0GqkddqHFTZKfciEjGmaz1iB7Qy73bQlE0r9OONpmzXCQYWyr/TUSU0X/tREFYxWDU5y7l54AiOhgwC7LoAN10YDXWlM5sDoNIcAG3pTGO0pc2VgZE15URgd3iPQpmRGmU/5FbiQb1syox2ExRby5YFObBbRM3zHPWwb45F8448lfmbwG1EkPAJZA5G0dDl9hYjK/sBHvxpJHZRGqrEDAAAAAElFTkSuQmCC"
+                        srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAAARBAMAAADZBkM8AAAAMFBMVEUAAAD///////////////////////////////////////////////////////////87TQQwAAAAEHRSTlMABQgtFgYDJCkaHxMPLzc+H1wV6wAAAVJJREFUWMPl1j1Iw1AQB/A/QRvRDGZoJz9CobgUQTI4dQuIU6uStbZLFkEyCIqgc0GUDi7dulpQN5eChA5ORcGC4hBUtH4OQsVFF5uE0PegkDcIiclvOLiDu+VuOPiJryKqzt8ROjHNVRQtcdWSJEkA/5XXAY6splSbaEtojgL+H41UFClpgG8v60CDric0AkJJkICjG4Az4BdiK97iqpfFJJvR2AnA68AYOMaWlOplQfRAXRWarjpJ6Zmv0GqkddqHFTZKfciEjGmaz1iB7Qy73bQlE0r9OONpmzXCQYWyr/TUSU0X/tREFYxWDU5y7l54AiOhgwC7LoAN10YDXWlM5sDoNIcAG3pTGO0pc2VgZE15URgd3iPQpmRGmU/5FbiQb1syox2ExRby5YFObBbRM3zHPWwb45F8448lfmbwG1EkPAJZA5G0dDl9hYjK/sBHvxpJHZRGqrEDAAAAAElFTkSuQmCC 1x, data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA+gAAAAiCAMAAAD75gOZAAAAM1BMVEUAAAD///////////////////////////////////////////////////////////////+3leKCAAAAEXRSTlMAChFIIQYOFRkbQTA8NiZFK8GkpgcAAALOSURBVHja7d3tduIgEAbggQkQBgLc/9XuWqWJPYnGj3UDfZ8x7Wn0h8eTtxmEKMGvMwwEAJ1zzJoAoGs2i4glAOiYiuwcR0UA0C0t7IjGLOjeAV5g5tpB3WF/0De4ddrQrLDoS94LzYx2G/Q2+4O6xyhzD80FcGim/jTLnYbMQ9TXzahat9nztsJa5xZPJLAo+ksJh8Wzc3o7qDsCXOt8exTNLgk/bYg6wEOcppn/atqdZL8IktZIFUDjlFM0s8LaZrFXD0DOAZpnr4Kss0jWNDMOk20A7TNa04JnHmlBO4L+mfdQx2E/R1t9aHateadSVjt7pY/NfpA6DvMe5KrxBr9u2CntV1LZJTxheki8IUtcIfvlffhFkubmfWmtcU/8qryPPGLvi19NjwlPKLukRwz7+MGvGW9yZ6SeZu8+oJat2zZ9qQX9Bu6qFtwrRuEw/zHXu/lXBXZz876u3uM5+FeNb7d8ec+8cHGv2D5A3sJW+rs2LGOhav0rWAn5FBvZUwNMFFVnymmVdub8W2ITb72biRMBfIhqJOmap9VhemXr7qmNK9pMZFxjC9t+7RFXeFhE+idVB+hDG+fJVv6/QkcmLtSAwG5u0rdy7jhQA7QwpgLh0wrHBg47E0VvJF25eg+3MEBXiXHNHXyeGTLHMhxdYBm+pFIcLehS0vBFeBqOLgXhCTmH/0GlKXNTxquZg5bkGMYG2g7o1JGWBG7xHK06sTFrulCB/WUne9UApBzgtpSDqRe0uO+cB0xMA/TEJJ4MnYxZRvrLBg7mnPM2pgkB4C7jeVJ04mJOhsbIxdBfasLENEA/hvrBrzpySPmSc9vIsh8A2MezODpRhTmOdOIk43wO0JX57K3HOnKP+GwZgM6oyMHQNxPwNQ4APSqLNaSjcMLUNECPnNRZtcDSwEJ9AHhCDbjPHNC2A/TLCU8TTucAnTODyIDR+W/zB89cYvalBCDoAAAAAElFTkSuQmCC 2x"
+                        alt="Section divider" />
+                </div>
+
+                <div class="section__heading">
+                    <h2 class="heading__title">NFT Marketplace In Game</h2>
+                    <p class="heading__desc">The Legends Of The Guild NFT Marketplace provides you with the opportunity to create (or as we call it, mint), sell, purchase, bid on, collect, trade, showcase and otherwise. With high liquidity, Legends Of The Guild NFT Marketplace
+                        is a peer-to-peer marketplace for NFTs collected or created in the games that users can trade easily and quickly on 24/7 basis. Rare digital NFTs items can be stored securely and displayed in NFTs Marketplace.</p>
+                </div>
+
+                <div class="section__content mt-4">
+                    <img class="block mx-auto" src="assets/market.jpg">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tokenomics" class="section section--tokenomics">
+        <div class="section__inner">
+            <div class="container">
+                <div class="divider">
+                    <img class="block mx-auto" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAAARBAMAAADZBkM8AAAAMFBMVEUAAAD///////////////////////////////////////////////////////////87TQQwAAAAEHRSTlMABQgtFgYDJCkaHxMPLzc+H1wV6wAAAVJJREFUWMPl1j1Iw1AQB/A/QRvRDGZoJz9CobgUQTI4dQuIU6uStbZLFkEyCIqgc0GUDi7dulpQN5eChA5ORcGC4hBUtH4OQsVFF5uE0PegkDcIiclvOLiDu+VuOPiJryKqzt8ROjHNVRQtcdWSJEkA/5XXAY6splSbaEtojgL+H41UFClpgG8v60CDric0AkJJkICjG4Az4BdiK97iqpfFJJvR2AnA68AYOMaWlOplQfRAXRWarjpJ6Zmv0GqkddqHFTZKfciEjGmaz1iB7Qy73bQlE0r9OONpmzXCQYWyr/TUSU0X/tREFYxWDU5y7l54AiOhgwC7LoAN10YDXWlM5sDoNIcAG3pTGO0pc2VgZE15URgd3iPQpmRGmU/5FbiQb1syox2ExRby5YFObBbRM3zHPWwb45F8448lfmbwG1EkPAJZA5G0dDl9hYjK/sBHvxpJHZRGqrEDAAAAAElFTkSuQmCC"
+                        srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAAARBAMAAADZBkM8AAAAMFBMVEUAAAD///////////////////////////////////////////////////////////87TQQwAAAAEHRSTlMABQgtFgYDJCkaHxMPLzc+H1wV6wAAAVJJREFUWMPl1j1Iw1AQB/A/QRvRDGZoJz9CobgUQTI4dQuIU6uStbZLFkEyCIqgc0GUDi7dulpQN5eChA5ORcGC4hBUtH4OQsVFF5uE0PegkDcIiclvOLiDu+VuOPiJryKqzt8ROjHNVRQtcdWSJEkA/5XXAY6splSbaEtojgL+H41UFClpgG8v60CDric0AkJJkICjG4Az4BdiK97iqpfFJJvR2AnA68AYOMaWlOplQfRAXRWarjpJ6Zmv0GqkddqHFTZKfciEjGmaz1iB7Qy73bQlE0r9OONpmzXCQYWyr/TUSU0X/tREFYxWDU5y7l54AiOhgwC7LoAN10YDXWlM5sDoNIcAG3pTGO0pc2VgZE15URgd3iPQpmRGmU/5FbiQb1syox2ExRby5YFObBbRM3zHPWwb45F8448lfmbwG1EkPAJZA5G0dDl9hYjK/sBHvxpJHZRGqrEDAAAAAElFTkSuQmCC 1x, data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA+gAAAAiCAMAAAD75gOZAAAAM1BMVEUAAAD///////////////////////////////////////////////////////////////+3leKCAAAAEXRSTlMAChFIIQYOFRkbQTA8NiZFK8GkpgcAAALOSURBVHja7d3tduIgEAbggQkQBgLc/9XuWqWJPYnGj3UDfZ8x7Wn0h8eTtxmEKMGvMwwEAJ1zzJoAoGs2i4glAOiYiuwcR0UA0C0t7IjGLOjeAV5g5tpB3WF/0De4ddrQrLDoS94LzYx2G/Q2+4O6xyhzD80FcGim/jTLnYbMQ9TXzahat9nztsJa5xZPJLAo+ksJh8Wzc3o7qDsCXOt8exTNLgk/bYg6wEOcppn/atqdZL8IktZIFUDjlFM0s8LaZrFXD0DOAZpnr4Kss0jWNDMOk20A7TNa04JnHmlBO4L+mfdQx2E/R1t9aHateadSVjt7pY/NfpA6DvMe5KrxBr9u2CntV1LZJTxheki8IUtcIfvlffhFkubmfWmtcU/8qryPPGLvi19NjwlPKLukRwz7+MGvGW9yZ6SeZu8+oJat2zZ9qQX9Bu6qFtwrRuEw/zHXu/lXBXZz876u3uM5+FeNb7d8ec+8cHGv2D5A3sJW+rs2LGOhav0rWAn5FBvZUwNMFFVnymmVdub8W2ITb72biRMBfIhqJOmap9VhemXr7qmNK9pMZFxjC9t+7RFXeFhE+idVB+hDG+fJVv6/QkcmLtSAwG5u0rdy7jhQA7QwpgLh0wrHBg47E0VvJF25eg+3MEBXiXHNHXyeGTLHMhxdYBm+pFIcLehS0vBFeBqOLgXhCTmH/0GlKXNTxquZg5bkGMYG2g7o1JGWBG7xHK06sTFrulCB/WUne9UApBzgtpSDqRe0uO+cB0xMA/TEJJ4MnYxZRvrLBg7mnPM2pgkB4C7jeVJ04mJOhsbIxdBfasLENEA/hvrBrzpySPmSc9vIsh8A2MezODpRhTmOdOIk43wO0JX57K3HOnKP+GwZgM6oyMHQNxPwNQ4APSqLNaSjcMLUNECPnNRZtcDSwEJ9AHhCDbjPHNC2A/TLCU8TTucAnTODyIDR+W/zB89cYvalBCDoAAAAAElFTkSuQmCC 2x"
+                        alt="Section divider" />
+                </div>
+
+
+                <div class="section__heading md:text-center">
+                    <h2 class="heading__title">Tokenomics</h2>
+                </div>
+
+                <div class="section__content">
+                    <div class="flex flex-wrap mt-4 md:flex-nowrap md:justify-between">
+                        <div class="token__name">
+                            <h5>Name</h5>
+                            <h3>Legends Of The Guild</h3>
+                        </div>
+                        <div class="token__symbol">
+                            <h5>Symbol</h5>
+                            <h3>LOG</h3>
+                        </div>
+                        <div class="token__supply mt-2 md:mt-0">
+                            <h5>Total Supply</h5>
+                            <h3>1,000,000,000</h3>
+                        </div>
+                        <div class="token__decimals mt-2 md:mt-0">
+                            <h5>Decimals</h5>
+                            <h3>9</h3>
+                        </div>
+                    </div>
+
+                    <div class="token-distribute md:mt-4">
+                        <div class="distribute__percent hidden md:flex">
+                            <div class="segment segment--presale">30%</div>
+                            <div class="segment segment--Staking">25%</div>
+                            <div class="segment segment--ecosystem">10%</div>
+                            <div class="segment segment--playtoearn">20%</div>
+                            <div class="segment segment--teams">10%</div>
+                            <div class="segment segment--marketing">5%</div>
+                        </div>
+                        <div class="distribute__detail mt-4 md:flex md:items-center md:justify-center">
+                            <div class="distribute distribute--presale">Public Sale - 30%</div>
+                            <div class="distribute distribute--Staking mt-1 md:mt-0 md:ml-5">Staking Reward - 25%</div>
+                            <div class="distribute distribute--dxfee mt-1 md:mt-0 md:ml-5">Ecosystem - 10%</div>
+                            <div class="distribute distribute--rewards mt-1 md:mt-0 md:ml-5">Play to Earn - 20%</div>
+                            <div class="distribute distribute--teams mt-1 md:mt-0 md:ml-5">Team and Advisor - 10%</div>
+                            <div class="distribute distribute--marketing mt-1 md:mt-0 md:ml-5">Marketing and Community - 5%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="roadmap" class="section section--roadmap">
+        <div class="section__inner">
+            <div class="container">
+                <div class="divider">
+                    <img class="block mx-auto" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAAARBAMAAADZBkM8AAAAMFBMVEUAAAD///////////////////////////////////////////////////////////87TQQwAAAAEHRSTlMABQgtFgYDJCkaHxMPLzc+H1wV6wAAAVJJREFUWMPl1j1Iw1AQB/A/QRvRDGZoJz9CobgUQTI4dQuIU6uStbZLFkEyCIqgc0GUDi7dulpQN5eChA5ORcGC4hBUtH4OQsVFF5uE0PegkDcIiclvOLiDu+VuOPiJryKqzt8ROjHNVRQtcdWSJEkA/5XXAY6splSbaEtojgL+H41UFClpgG8v60CDric0AkJJkICjG4Az4BdiK97iqpfFJJvR2AnA68AYOMaWlOplQfRAXRWarjpJ6Zmv0GqkddqHFTZKfciEjGmaz1iB7Qy73bQlE0r9OONpmzXCQYWyr/TUSU0X/tREFYxWDU5y7l54AiOhgwC7LoAN10YDXWlM5sDoNIcAG3pTGO0pc2VgZE15URgd3iPQpmRGmU/5FbiQb1syox2ExRby5YFObBbRM3zHPWwb45F8448lfmbwG1EkPAJZA5G0dDl9hYjK/sBHvxpJHZRGqrEDAAAAAElFTkSuQmCC"
+                        srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAAARBAMAAADZBkM8AAAAMFBMVEUAAAD///////////////////////////////////////////////////////////87TQQwAAAAEHRSTlMABQgtFgYDJCkaHxMPLzc+H1wV6wAAAVJJREFUWMPl1j1Iw1AQB/A/QRvRDGZoJz9CobgUQTI4dQuIU6uStbZLFkEyCIqgc0GUDi7dulpQN5eChA5ORcGC4hBUtH4OQsVFF5uE0PegkDcIiclvOLiDu+VuOPiJryKqzt8ROjHNVRQtcdWSJEkA/5XXAY6splSbaEtojgL+H41UFClpgG8v60CDric0AkJJkICjG4Az4BdiK97iqpfFJJvR2AnA68AYOMaWlOplQfRAXRWarjpJ6Zmv0GqkddqHFTZKfciEjGmaz1iB7Qy73bQlE0r9OONpmzXCQYWyr/TUSU0X/tREFYxWDU5y7l54AiOhgwC7LoAN10YDXWlM5sDoNIcAG3pTGO0pc2VgZE15URgd3iPQpmRGmU/5FbiQb1syox2ExRby5YFObBbRM3zHPWwb45F8448lfmbwG1EkPAJZA5G0dDl9hYjK/sBHvxpJHZRGqrEDAAAAAElFTkSuQmCC 1x, data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA+gAAAAiCAMAAAD75gOZAAAAM1BMVEUAAAD///////////////////////////////////////////////////////////////+3leKCAAAAEXRSTlMAChFIIQYOFRkbQTA8NiZFK8GkpgcAAALOSURBVHja7d3tduIgEAbggQkQBgLc/9XuWqWJPYnGj3UDfZ8x7Wn0h8eTtxmEKMGvMwwEAJ1zzJoAoGs2i4glAOiYiuwcR0UA0C0t7IjGLOjeAV5g5tpB3WF/0De4ddrQrLDoS94LzYx2G/Q2+4O6xyhzD80FcGim/jTLnYbMQ9TXzahat9nztsJa5xZPJLAo+ksJh8Wzc3o7qDsCXOt8exTNLgk/bYg6wEOcppn/atqdZL8IktZIFUDjlFM0s8LaZrFXD0DOAZpnr4Kss0jWNDMOk20A7TNa04JnHmlBO4L+mfdQx2E/R1t9aHateadSVjt7pY/NfpA6DvMe5KrxBr9u2CntV1LZJTxheki8IUtcIfvlffhFkubmfWmtcU/8qryPPGLvi19NjwlPKLukRwz7+MGvGW9yZ6SeZu8+oJat2zZ9qQX9Bu6qFtwrRuEw/zHXu/lXBXZz876u3uM5+FeNb7d8ec+8cHGv2D5A3sJW+rs2LGOhav0rWAn5FBvZUwNMFFVnymmVdub8W2ITb72biRMBfIhqJOmap9VhemXr7qmNK9pMZFxjC9t+7RFXeFhE+idVB+hDG+fJVv6/QkcmLtSAwG5u0rdy7jhQA7QwpgLh0wrHBg47E0VvJF25eg+3MEBXiXHNHXyeGTLHMhxdYBm+pFIcLehS0vBFeBqOLgXhCTmH/0GlKXNTxquZg5bkGMYG2g7o1JGWBG7xHK06sTFrulCB/WUne9UApBzgtpSDqRe0uO+cB0xMA/TEJJ4MnYxZRvrLBg7mnPM2pgkB4C7jeVJ04mJOhsbIxdBfasLENEA/hvrBrzpySPmSc9vIsh8A2MezODpRhTmOdOIk43wO0JX57K3HOnKP+GwZgM6oyMHQNxPwNQ4APSqLNaSjcMLUNECPnNRZtcDSwEJ9AHhCDbjPHNC2A/TLCU8TTucAnTODyIDR+W/zB89cYvalBCDoAAAAAElFTkSuQmCC 2x"
+                        alt="Section divider" />
+                </div>
+
+
+                <div class="section__heading">
+                    <h2 class="heading__title">Our Roadmap</h2>
+                    <p class="heading__desc">NFTs Marketplace is where you create, sell, and buy NFTs digital content. Moreover, you can launch NFT auctions, earn commissions from affiliate programs, and build your favorite NFT collection.</p>
+                </div>
+
+                <div class="section__content mt-4">
+                    <div class="roadmaps md:flex md:mt-0">
+                        <div class="card card--roadmap md:flex-1">
+                            <div class="card__horizontal">
+                                <div class="card__vertical">
+                                    <div class="card__inner">
+                                        <!-- /.card__top -->
+                                        <div class="card__content">
+                                            <h3 class="task__title">Phase #1</h3>
+                                            <ul class="task__items">
+                                                <li class="task__item task__item--done">Graphic Game Designs</li>
+                                                <li class="task__item task__item--done">Release Website</li>
+                                                <li class="task__item task__item--done">Audit Smart Contract</li>
+                                                <li class="task__item task__item--done">Launch Social Channels</li>
+                                                <li class="task__item task__item--done">Marketing to spread awareness</li>
+                                                <li class="task__item task__item--current">Test Beta Game Version</li>
+                                                <li class="task__item">PreSale in DxSale</li>
+                                                <li class="task__item">Public Launch On PancakeSwap</li>
+                                                <li class="task__item">Open Official Game Version 1</li>
+                                                <li class="task__item">Public Launch NFT Marketplace</li>
+                                                <li class="task__item">Apply Coingecko and Coinmarketcap</li>
+                                            </ul>
+                                        </div>
+                                        <!-- /.card__content -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.card__inner -->
+                        </div>
+                        <!-- /.card -->
+
+                        <div class="card card--roadmap mt-3 md:mt-0 md:ml-5 md:flex-1">
+                            <div class="card__horizontal">
+                                <div class="card__vertical">
+                                    <div class="card__inner">
+                                        <!-- /.card__top -->
+                                        <div class="card__content">
+                                            <h3 class="task__title">Phase #2</h3>
+                                            <ul class="task__items">
+                                                <li class="task__item">Push Marketing with KOLs on board</li>
+                                                <li class="task__item">Update Website Version 2</li>
+                                                <li class="task__item">Initial CEX Listing</li>
+                                                <li class="task__item">Test Beta Game Version 2</li>
+                                                <li class="task__item">Airdrop and Bounty Campaign</li>
+                                                <li class="task__item">Open Official Game Version 2</li>
+                                                <li class="task__item">Recruiment Legends Of The Guild Team</li>
+                                                <li class="task__item">Partnership with Famous Game Studio</li>
+                                                <li class="task__item">Update Website Version 3</li>
+                                            </ul>
+                                        </div>
+                                        <!-- /.card__content -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.card__inner -->
+                        </div>
+                        <!-- /.card -->
+
+                        <div class="card card--roadmap mt-3 md:mt-0 md:ml-5 md:flex-1">
+                            <div class="card__horizontal">
+                                <div class="card__vertical">
+                                    <div class="card__inner">
+                                        <!-- /.card__top -->
+                                        <div class="card__content">
+                                            <h3 class="task__title">Phase #3</h3>
+                                            <ul class="task__items">
+
+                                                <li class="task__item">More CEX Listing</li>
+                                                <li class="task__item">Test Beta Game Version 3</li>
+                                                <li class="task__item">Push Marketing Campaign </li>
+                                                <li class="task__item">Build worldwide communities in different zones</li>
+                                                <li class="task__item">Release real-life game products</li>
+                                                <li class="task__item">Open Official Game Version 3</li>
+                                                <li class="task__item">Release Dapp Mobile Games in iOs and Android</li>
+                                                <li class="task__item">Organize Legends Of The Guild Global Championship</li>
+                                            </ul>
+                                        </div>
+                                        <!-- /.card__content -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.card__inner -->
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="community" class="section section--community">
+        <div class="section__inner">
+            <div class="container">
+                <div class="divider">
+                    <img class="block mx-auto" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAAARBAMAAADZBkM8AAAAMFBMVEUAAAD///////////////////////////////////////////////////////////87TQQwAAAAEHRSTlMABQgtFgYDJCkaHxMPLzc+H1wV6wAAAVJJREFUWMPl1j1Iw1AQB/A/QRvRDGZoJz9CobgUQTI4dQuIU6uStbZLFkEyCIqgc0GUDi7dulpQN5eChA5ORcGC4hBUtH4OQsVFF5uE0PegkDcIiclvOLiDu+VuOPiJryKqzt8ROjHNVRQtcdWSJEkA/5XXAY6splSbaEtojgL+H41UFClpgG8v60CDric0AkJJkICjG4Az4BdiK97iqpfFJJvR2AnA68AYOMaWlOplQfRAXRWarjpJ6Zmv0GqkddqHFTZKfciEjGmaz1iB7Qy73bQlE0r9OONpmzXCQYWyr/TUSU0X/tREFYxWDU5y7l54AiOhgwC7LoAN10YDXWlM5sDoNIcAG3pTGO0pc2VgZE15URgd3iPQpmRGmU/5FbiQb1syox2ExRby5YFObBbRM3zHPWwb45F8448lfmbwG1EkPAJZA5G0dDl9hYjK/sBHvxpJHZRGqrEDAAAAAElFTkSuQmCC"
+                        srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAAARBAMAAADZBkM8AAAAMFBMVEUAAAD///////////////////////////////////////////////////////////87TQQwAAAAEHRSTlMABQgtFgYDJCkaHxMPLzc+H1wV6wAAAVJJREFUWMPl1j1Iw1AQB/A/QRvRDGZoJz9CobgUQTI4dQuIU6uStbZLFkEyCIqgc0GUDi7dulpQN5eChA5ORcGC4hBUtH4OQsVFF5uE0PegkDcIiclvOLiDu+VuOPiJryKqzt8ROjHNVRQtcdWSJEkA/5XXAY6splSbaEtojgL+H41UFClpgG8v60CDric0AkJJkICjG4Az4BdiK97iqpfFJJvR2AnA68AYOMaWlOplQfRAXRWarjpJ6Zmv0GqkddqHFTZKfciEjGmaz1iB7Qy73bQlE0r9OONpmzXCQYWyr/TUSU0X/tREFYxWDU5y7l54AiOhgwC7LoAN10YDXWlM5sDoNIcAG3pTGO0pc2VgZE15URgd3iPQpmRGmU/5FbiQb1syox2ExRby5YFObBbRM3zHPWwb45F8448lfmbwG1EkPAJZA5G0dDl9hYjK/sBHvxpJHZRGqrEDAAAAAElFTkSuQmCC 1x, data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA+gAAAAiCAMAAAD75gOZAAAAM1BMVEUAAAD///////////////////////////////////////////////////////////////+3leKCAAAAEXRSTlMAChFIIQYOFRkbQTA8NiZFK8GkpgcAAALOSURBVHja7d3tduIgEAbggQkQBgLc/9XuWqWJPYnGj3UDfZ8x7Wn0h8eTtxmEKMGvMwwEAJ1zzJoAoGs2i4glAOiYiuwcR0UA0C0t7IjGLOjeAV5g5tpB3WF/0De4ddrQrLDoS94LzYx2G/Q2+4O6xyhzD80FcGim/jTLnYbMQ9TXzahat9nztsJa5xZPJLAo+ksJh8Wzc3o7qDsCXOt8exTNLgk/bYg6wEOcppn/atqdZL8IktZIFUDjlFM0s8LaZrFXD0DOAZpnr4Kss0jWNDMOk20A7TNa04JnHmlBO4L+mfdQx2E/R1t9aHateadSVjt7pY/NfpA6DvMe5KrxBr9u2CntV1LZJTxheki8IUtcIfvlffhFkubmfWmtcU/8qryPPGLvi19NjwlPKLukRwz7+MGvGW9yZ6SeZu8+oJat2zZ9qQX9Bu6qFtwrRuEw/zHXu/lXBXZz876u3uM5+FeNb7d8ec+8cHGv2D5A3sJW+rs2LGOhav0rWAn5FBvZUwNMFFVnymmVdub8W2ITb72biRMBfIhqJOmap9VhemXr7qmNK9pMZFxjC9t+7RFXeFhE+idVB+hDG+fJVv6/QkcmLtSAwG5u0rdy7jhQA7QwpgLh0wrHBg47E0VvJF25eg+3MEBXiXHNHXyeGTLHMhxdYBm+pFIcLehS0vBFeBqOLgXhCTmH/0GlKXNTxquZg5bkGMYG2g7o1JGWBG7xHK06sTFrulCB/WUne9UApBzgtpSDqRe0uO+cB0xMA/TEJJ4MnYxZRvrLBg7mnPM2pgkB4C7jeVJ04mJOhsbIxdBfasLENEA/hvrBrzpySPmSc9vIsh8A2MezODpRhTmOdOIk43wO0JX57K3HOnKP+GwZgM6oyMHQNxPwNQ4APSqLNaSjcMLUNECPnNRZtcDSwEJ9AHhCDbjPHNC2A/TLCU8TTucAnTODyIDR+W/zB89cYvalBCDoAAAAAElFTkSuQmCC 2x"
+                        alt="Section divider" />
+                </div>
+
+
+                <div class="section__heading">
+                    <h2 class="heading__title">Community</h2>
+                    <div class="heading__desc">
+                        <p>Legends Of The Guild is a prominent game which can implement a thorough solution for building blockchain-based games, and rapidly achieve both traditional game players and existing blockchain users through its unique distribution
+                            system and public blockchain plan.</p>
+                        <p>Legends Of The Guild aims to generate the easy entrance to a complete blockchain gaming ecosystem that would reduce the barrier to access faced by non-blockchain developers and players. This allows users and the development team
+                            are both incentivized to work together to grow the Legends Of The Guild network. We are ambitious to build Legends Of The Guild to become widely recognized as one of the largest and strongest community in NFT gaming.</p>
+                    </div>
+                </div>
+
+                <div class="section__content mt-4">
+                    <div class="toolbar flex col lg:row lg:justify-center">
+                        <a target="_blank" href="https://t.me/legendsguild_public" class="button button--green">
+                            <span class="button__text">Telegram</span>
+                        </a>
+                        <a target="_blank" href="https://twitter.com/Legends_Guild?s=09" class="button button--green mt-1 lg:mt-0 lg:ml-1">
+                            <span class="button__text">Twitter</span>
+                        </a>
+                        <a target="_blank" href="#" class="button button--green mt-1 lg:mt-0 lg:ml-1">
+                            <span class="button__text">Discord</span>
+                        </a>
+                        <a target="_blank" href="#" class="button button--green mt-1 lg:mt-0 lg:ml-1">
+                            <span class="button__text">Youtube</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer mt-4 lg:mt-15">
+        <div class="container">
+            Copyright © 2021.All Rights Reserved By Legends
+        </div>
+    </footer>
+
+
+    <svg class="hidden" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="icon-facebook" width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/symbol">
+      <rect x="0.518555" width="32" height="32" rx="16" fill="#4267B2"/>
+      <path d="M17.5869 26.6666V16.9354H20.8532L21.3423 13.143H17.5869V10.7217C17.5869 9.62372 17.8918 8.8754 19.4664 8.8754L21.4746 8.87448V5.48262C21.1271 5.43657 19.9351 5.33334 18.5483 5.33334C15.6529 5.33334 13.6706 7.10061 13.6706 10.3463V13.1431H10.3958V16.9355H13.6705V26.6667L17.5869 26.6666Z" fill="white"/>
+    </symbol>
+    
+    <symbol id="icon-discord" width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0.518555" width="32" height="32" rx="16" fill="#7289DA"/>
+      <path d="M24.543 10.5199C23.0751 9.34557 21.3137 8.75841 19.4543 8.66055L19.1608 8.95413C20.8244 9.34557 22.2922 10.1284 23.6623 11.2049C21.9987 10.3242 20.1393 9.73701 18.1822 9.54129C17.595 9.44343 17.1057 9.44343 16.5185 9.44343C15.9314 9.44343 15.4421 9.44343 14.8549 9.54129C12.8978 9.73701 11.0384 10.3242 9.37482 11.2049C10.7448 10.1284 12.2127 9.34557 13.8763 8.95413L13.5828 8.66055C11.7234 8.75841 9.96197 9.34557 8.49408 10.5199C6.83048 13.6514 5.94974 17.1743 5.85188 20.7951C7.31977 22.3609 9.37482 23.3395 11.5277 23.3395C11.5277 23.3395 12.2127 22.5566 12.702 21.8716C11.4299 21.578 10.2556 20.893 9.47268 19.8165C10.1577 20.208 10.8427 20.5994 11.5277 20.893C12.4085 21.2844 13.2892 21.4801 14.1699 21.6758C14.9528 21.7737 15.7357 21.8716 16.5185 21.8716C17.3014 21.8716 18.0843 21.7737 18.8672 21.6758C19.7479 21.4801 20.6286 21.2844 21.5094 20.893C22.1944 20.5994 22.8794 20.208 23.5644 19.8165C22.7815 20.893 21.6072 21.578 20.3351 21.8716C20.8244 22.5566 21.5094 23.3395 21.5094 23.3395C23.6623 23.3395 25.7173 22.3609 27.1852 20.7951C27.0874 17.1743 26.2066 13.6514 24.543 10.5199ZM13.2892 19.0336C12.3106 19.0336 11.4299 18.1529 11.4299 17.0765C11.4299 16 12.3106 15.1193 13.2892 15.1193C14.2678 15.1193 15.1485 16 15.1485 17.0765C15.1485 18.1529 14.2678 19.0336 13.2892 19.0336ZM19.7479 19.0336C18.7693 19.0336 17.8886 18.1529 17.8886 17.0765C17.8886 16 18.7693 15.1193 19.7479 15.1193C20.7265 15.1193 21.6072 16 21.6072 17.0765C21.6072 18.1529 20.7265 19.0336 19.7479 19.0336Z" fill="white"/>
+    </symbol>
+    
+    <symbol id="icon-youtube" width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0.518555" width="32" height="32" rx="16" fill="#FF0000"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M24.3438 9.42672C25.2005 9.65736 25.876 10.3328 26.1066 11.1895C26.5349 12.7545 26.5185 16.0165 26.5185 16.0165C26.5185 16.0165 26.5185 19.2619 26.1066 20.827C25.876 21.6837 25.2005 22.3591 24.3438 22.5898C22.7788 23.0016 16.5185 23.0016 16.5185 23.0016C16.5185 23.0016 10.2747 23.0016 8.69317 22.5733C7.83651 22.3426 7.16106 21.6672 6.93041 20.8105C6.51855 19.2619 6.51855 16 6.51855 16C6.51855 16 6.51855 12.7545 6.93041 11.1895C7.16106 10.3328 7.85298 9.64088 8.69317 9.41024C10.2582 8.99838 16.5185 8.99838 16.5185 8.99838C16.5185 8.99838 22.7788 8.99838 24.3438 9.42672ZM19.731 16L14.5251 18.9983V13.0017L19.731 16Z" fill="white"/>
+    </symbol>
+    
+    <symbol id="icon-telegram" width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0.518555" width="32" height="32" rx="16" fill="#419FD9"/>
+      <rect x="0.518555" width="32" height="32" rx="16" fill="url(#paint0_linear)"/>
+      <path d="M7.71013 15.6473C12.363 13.5775 15.4656 12.213 17.0181 11.5537C21.4505 9.67135 22.3715 9.34436 22.9719 9.33345C23.1039 9.33119 23.3991 9.3646 23.5903 9.52303C23.7518 9.6568 23.7962 9.83752 23.8175 9.96435C23.8388 10.0912 23.8652 10.3801 23.8442 10.6059C23.604 13.1827 22.5647 19.4359 22.0359 22.322C21.8122 23.5432 21.3716 23.9527 20.9451 23.9927C20.0183 24.0798 19.3145 23.3673 18.4167 22.7665C17.012 21.8263 16.2184 21.241 14.8548 20.3236C13.279 19.2633 14.3006 18.6806 15.1986 17.7282C15.4336 17.479 19.5174 13.6864 19.5965 13.3423C19.6064 13.2993 19.6155 13.1389 19.5222 13.0542C19.4289 12.9695 19.2912 12.9985 19.1918 13.0215C19.0509 13.0542 16.8068 14.5686 12.4594 17.5649C11.8225 18.0114 11.2455 18.229 10.7286 18.2176C10.1587 18.2051 9.06246 17.8886 8.24753 17.6182C7.24799 17.2864 6.45358 17.111 6.52275 16.5476C6.55878 16.2542 6.95458 15.9541 7.71013 15.6473Z" fill="white"/>
+      <defs>
+        <linearGradient id="paint0_linear" x1="16.5186" y1="0" x2="16.5186" y2="31.7626" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#2AABEE"/>
+          <stop offset="1" stop-color="#229ED9"/>
+        </linearGradient>
+      </defs>
+    </symbol>
+    
+    <symbol id="icon-twitter" width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0.518555" width="32" height="32" rx="16" fill="#1DA1F2"/>
+      <path d="M24.3602 12.5417C24.3602 12.7167 24.3602 12.8917 24.3602 13.0417C24.3602 18.2167 20.4102 24.1917 13.2102 24.1917C10.9852 24.1917 8.93521 23.5417 7.18521 22.4417C7.48521 22.4667 7.81021 22.4917 8.11021 22.4917C9.93521 22.4917 11.6352 21.8667 12.9852 20.8167C11.2602 20.7917 9.81021 19.6417 9.33521 18.0917C9.58521 18.1417 9.81021 18.1667 10.0852 18.1667C10.4352 18.1667 10.7852 18.1167 11.1102 18.0167C9.31021 17.6667 7.96021 16.0917 7.96021 14.1917C7.96021 14.1667 7.96021 14.1667 7.96021 14.1417C8.48521 14.4417 9.08521 14.6167 9.73521 14.6417C8.68521 13.9417 7.98521 12.7417 7.98521 11.3667C7.98521 10.6417 8.18521 9.96666 8.51021 9.39166C10.4352 11.7667 13.3352 13.3167 16.5852 13.4917C16.5102 13.2167 16.4852 12.8917 16.4852 12.5917C16.4852 10.4167 18.2352 8.66666 20.4102 8.66666C21.5352 8.66666 22.5602 9.14166 23.2602 9.89166C24.1602 9.71666 24.9852 9.39166 25.7602 8.94166C25.4602 9.86666 24.8352 10.6167 24.0352 11.1167C24.8352 11.0167 25.5852 10.8167 26.2852 10.4917C25.7852 11.2917 25.1352 11.9917 24.3602 12.5417Z" fill="white"/>
+    </symbol>        
+  </svg>
+    <img id="particles-image" src="assets/particle.599fd7a3.png" style="display: none;" />
+
+
+    <script src="particles.js"></script>
+    <script>
+        var particlesConfig = {
+            "particles": {
+                "number": {
+                    "value": 100,
+                    "density": {
+                        "enable": false,
+                        "value_area": 1420.4657549380909
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "image",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#ffffff"
+                    },
+                    "polygon": {
+                        "nb_sides": 4
+                    },
+                    "image": {
+                        "src": document.getElementById('particles-image').src,
+                        "width": 200,
+                        "height": 200
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 15,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": false
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": false,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": false,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        };
+
+        particlesJS('particles-js', particlesConfig);
+    </script>
+</body>
+
+</html>
